@@ -1,12 +1,15 @@
 {
-  "name": "itmo_learning",
-  "version": "1.0.0",
-  "description": "Branch Homework",
-  "main": "index.js",
+  "name": "---",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "author": "",
-  "license": "ISC",
-  "test": "first commit"
+  "devDependencies": {
+    "prettier": "^2.8.4",
+    "vite": "^4.1.0"
+  },
 }
