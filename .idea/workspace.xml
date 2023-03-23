@@ -1,37 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f89c7672-bf74-4c6d-861a-509d264d7e5d" name="Changes" comment="Html lesson base tags">
-      <change afterPath="$PROJECT_DIR$/README-template.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/design/active-states.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/design/desktop-design.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/design/desktop-preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/design/mobile-design.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/design/mobile-menu-collapsed.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/design/mobile-menu-expanded.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/client-audiophile.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/client-databiz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/client-maker.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/client-meet.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icon-arrow-down.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icon-arrow-up.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icon-calendar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icon-close-menu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icon-menu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icon-planning.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icon-reminders.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icon-todo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/image-hero-desktop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/image-hero-mobile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro-section-with-dropdown-navigation-main.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style-guide.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-    </list>
+    <list default="true" id="f89c7672-bf74-4c6d-861a-509d264d7e5d" name="Changes" comment="Html lesson base tags" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,7 +91,7 @@
       <workItem from="1679429887628" duration="840000" />
       <workItem from="1679505694456" duration="2427000" />
       <workItem from="1679508166694" duration="4472000" />
-      <workItem from="1679587264221" duration="761000" />
+      <workItem from="1679587264221" duration="1139000" />
     </task>
     <task id="LOCAL-00001" summary="first changes">
       <created>1678813468071</created>
