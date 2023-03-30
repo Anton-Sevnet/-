@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<head>
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+</head>
+<body class="flex flex-col bg-teal-100/50 w-screen h-screen place-items-center p-12">
+
+<div class="container flex flex-row w-full h-full bg-neutral-200 rounded-xl p-4">
+  <aside class="flex flex-col  min-w-[144px]">
+    <div class="flex flex-row items-center gap-x-2 py-4">
+      <i class="iconify-inline text-teal-700 text-3xl"
+         data-icon="ph:cube-focus-bold">
+      </i>
+      <span class="font-bold text-xl">Taski</span>
+    </div>
+  </aside>
+  <main class="flex flex-col bg-gray-50 rounded-2xl w-full px-4 gap-y-2">
+    <div class="flex flex-row justify-between items-center pt-2">
+      <div class="flex flex-col py-4">
+        <span class="text-lg font-bold">Team tasks</span>
+      </div>
+      <div class="flex flex-col">
+        <div class="flex flex-row items-center gap-x-4"><span class="text-lg">Search</span>
+          <button class="px-4 py-2 bg-teal-600 rounded-2xl text-white">+Create Task</button>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-row justify-between items-center pt-2">
+      <div class="flex flex-col py-4">
+        <span class="text-sm">Filters</span>
+      </div>
+      <div class="flex flex-col">
+        <div class="flex flex-row items-center gap-x-8">
+          <span class="text-neutral-400 text-sm">Sort by</span>
+          <span class="text-neutral-400 text-xs">Group by: Start</span>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-row justify-between justify-center h-full gap-x-4 pb-2">
+      <div class="flex flex-col rounded-xl h-full w-1/3 bg-gray-200/80">1</div>
+      <div class="flex flex-col rounded-xl h-full w-1/3 bg-gray-200/80">2</div>
+      <div class="flex flex-col rounded-xl h-full w-1/3 bg-gray-200/80">3</div>
+    </div>
+  </main>
+  <script type="module" src="main.ts">
+  
+  </script>
+</div>
+</body>
 </html>
