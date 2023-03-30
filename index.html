@@ -1,93 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru_RU">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/images/favicon-32x32.png"
-    />
-
-    <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      @tailwind base;
-      @tailwind components;
-      @tailwind utilities;
-      @layer components {
-        .btn-register {
-          @apply hover:text-black;
-        }
-      }
-      @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&family=Fraunces:wght@700&display=swap');
-      body * {
-        font-family: 'Epilogue', sans-serif;
-      }
-    </style>
+    <title>Vite + TS</title>
   </head>
-  <body class="flex-col h-screen bg-amber-100/50">
-    <div class="flex flex-col">
-      <div class="fles flex-row items-center">
-        <header
-          class="flex justify-between bg-white items-center px-6 py-4 text-neutral-500"
-        >
-          <div class="flex flex-row gap-x-8">
-            <img class="relative top-1" src="public/logo.svg" alt="logo" />
-            <nav class="flex flex-row gap-x-6">
-              <div class="flex flex-row gap-x-2 items-center hover:text-black">
-                <div>Features</div>
-                <img src="assets/images/icon-arrow-down.svg" />
-              </div>
-              <div class="flex flex-row gap-x-2 items-center hover:text-black">
-                <div>Company</div>
-                <img src="assets/images/icon-arrow-down.svg" />
-              </div>
-              <div class="btn-register">Careers</div>
-              <div class="btn-register">About</div>
-            </nav>
-          </div>
-          <div class="flex flex-row gap-x-4 items-center">
-            <div class="hover:text-black">Login</div>
-            <div
-              class="border-2 border-gray-500 px-3 py-2 bg-amber-50 rounded-xl btn-register"
-            >
-              Register
-            </div>
-          </div>
-        </header>
-      </div>
-      <main class="md:container md:mx-auto flex flex-row">
-        <div class="flex flex-col w-1/2 h-screen bg-blue-300">
-          <div class="flex flex-row">
-            <div class="flex bg-white flex-col justify-between px-10 py-32">
-              <div class="text-4xl font-bold">
-                Make <br />
-                remote work
-              </div>
-              Get your team in sync, no matter your location. Streamline
-              processes, create team rituals, and watch productivity soar.
-              <div class="bg-black rounded-lg h-10 w-32 px-5 text-white">
-                Learn more
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-row">icons</div>
-        </div>
-        <div class="flex flex-col w-1/2">
-          <div>
-            <img
-              class="bg-white"
-              src="assets/images/image-hero-desktop.png"
-              alt="screen"
-            />
-          </div>
-        </div>
-      </main>
-    </div>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
