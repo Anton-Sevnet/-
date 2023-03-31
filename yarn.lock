@@ -138,7 +138,15 @@
   resolved "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.17.14.tgz"
   integrity sha512-gPQmsi2DKTaEgG14hc3CHXHp62k8g6qr0Pas+I4lUxRMugGSATh/Bi8Dgusoz9IQ0IfdrvLpco6kujEIBoaogA==
 
-"@iconify/types@^2.0.0":
+"@iconify/json@^2.2.42":
+  version "2.2.42"
+  resolved "https://registry.yarnpkg.com/@iconify/json/-/json-2.2.42.tgz#e02abad9ab9120a45620abbc19bb4877442cf2d5"
+  integrity sha512-CLZHgcBIqNuy9lRwHjuvFb++OcqJFjJmr5Rg8MZ8Dc/hfcpU9L5IW4O3oB2UPQecXMKswZLoamfFajBAt03igw==
+  dependencies:
+    "@iconify/types" "*"
+    pathe "^1.0.0"
+
+"@iconify/types@*", "@iconify/types@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@iconify/types/-/types-2.0.0.tgz#ab0e9ea681d6c8a1214f30cd741fe3a20cc57f57"
   integrity sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==
@@ -294,7 +302,7 @@
   dependencies:
     "@unocss/core" "0.50.6"
 
-"@unocss/preset-icons@0.50.6":
+"@unocss/preset-icons@0.50.6", "@unocss/preset-icons@^0.50.6":
   version "0.50.6"
   resolved "https://registry.yarnpkg.com/@unocss/preset-icons/-/preset-icons-0.50.6.tgz#46e8de6b78154ade616dfbe6164e4dced38f5ad3"
   integrity sha512-ADnvX8JCThEr2DBiDprTh2q4bfvULbCg9hL5DZIuP9/31FvzNqpAI8xo9KpsCPBoQMksg+GVoXhj1CN2IxLhtg==
@@ -334,7 +342,7 @@
     "@unocss/preset-mini" "0.50.6"
     "@unocss/preset-wind" "0.50.6"
 
-"@unocss/preset-web-fonts@0.50.6":
+"@unocss/preset-web-fonts@0.50.6", "@unocss/preset-web-fonts@^0.50.6":
   version "0.50.6"
   resolved "https://registry.yarnpkg.com/@unocss/preset-web-fonts/-/preset-web-fonts-0.50.6.tgz#710e5b06f01f421441c3b8c5cfc8acf9295a1b8e"
   integrity sha512-81meQMAq2lOy7k5qHQZ2EGWN5iJQUJOLl8dc9dxIo1eZPgiZQruxTVr4AkNVH5LRFcjHs/1sDb2CYxAiakwTVg==
@@ -350,7 +358,7 @@
     "@unocss/core" "0.50.6"
     "@unocss/preset-mini" "0.50.6"
 
-"@unocss/reset@0.50.6":
+"@unocss/reset@0.50.6", "@unocss/reset@^0.50.6":
   version "0.50.6"
   resolved "https://registry.yarnpkg.com/@unocss/reset/-/reset-0.50.6.tgz#edbc1127f848013b894f744cc4abe2295149cf66"
   integrity sha512-e1fuSEgp1p7FgpsIZKNejOKgq4gyZcDGDvi+6544x458hInM6MfiMQNP95UBJEG4JZXq6qCZ8t7tRVWS2m5IXg==
@@ -986,7 +994,7 @@ path-parse@^1.0.7:
   resolved "https://registry.npmjs.org/path-parse/-/path-parse-1.0.7.tgz"
   integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
-pathe@^1.1.0:
+pathe@^1.0.0, pathe@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/pathe/-/pathe-1.1.0.tgz#e2e13f6c62b31a3289af4ba19886c230f295ec03"
   integrity sha512-ODbEPR0KKHqECXW1GoxdDb+AZvULmXjVPy4rt+pGo2+TnjJTIPJQSVS6N63n8T2Ip+syHhbn52OewKicV0373w==

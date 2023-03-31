@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+
 </head>
-<body class="flex flex-col bg-teal-100/50 w-screen h-screen place-items-center p-12">
+<body class="flex flex-col bg-teal-100/50 w-screen h-screen place-items-center p-12 font-sans">
 
 <div class="container flex flex-row w-full h-full bg-neutral-200 rounded-xl p-4">
   <aside class="flex flex-col  min-w-[144px]">
     <div class="flex flex-row items-center gap-x-2 py-4">
-      <i class="iconify-inline text-teal-700 text-3xl"
-         data-icon="ph:cube-focus-bold">
+      <i class="i-ph:cube-focus-bold text-teal-700 text-3xl"
+      >
       </i>
       <span class="font-bold text-xl">Taski</span>
     </div>
@@ -26,18 +26,90 @@
       </div>
     </div>
     <div class="flex flex-row justify-between items-center pt-2">
-      <div class="flex flex-col py-4">
-        <span class="text-sm">Filters</span>
+      <div class="flex flex-col">
+        <div class="flex flex-row items-center hover:text-neutral-600">
+          <i class="i-ic-round-filter-alt text-neutral-400 "></i>
+          <span class="text-sm">Filters</span>
+          <i class="i-mdi-chevron-down text-neutral-400"></i>
+        </div>
       </div>
       <div class="flex flex-col">
-        <div class="flex flex-row items-center gap-x-8">
-          <span class="text-neutral-400 text-sm">Sort by</span>
-          <span class="text-neutral-400 text-xs">Group by: Start</span>
+        <div class="flex flex-row items-center gap-x-4">
+          <div class="flex flex-row items-center hover:text-neutral-600">
+            <span class="text-neutral-400 text-sm">Sort by</span>
+            <i class="i-mdi-chevron-down text-neutral-400 "></i>
+          </div>
+          <div class="flex flex-row">
+            <div class="flex flex-row items-center">
+              <span class="text-neutral-400 text-xs">Group by:&nbsp;</span>
+              <div class="flex flex-row">
+                <span class="text-neutral-400 text-xs">Start</span>
+                <i class="i-mdi-chevron-down text-neutral-400 "></i>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="flex flex-row justify-between justify-center h-full gap-x-4 pb-2">
-      <div class="flex flex-col rounded-xl h-full w-1/3 bg-gray-200/80">1</div>
+    <div class="flex flex-row justify-between justify-center h-60 gap-x-4 pb-2">
+      <div class="flex flex-col rounded-xl h-full w-1/3 bg-gray-200/80">
+        <div class="flex flex-row justify-between font-bold gap-x-1 px-2 py-1">
+          <div class="flex flex-col">
+            <div class="flex flex-row">
+              <span>To Do </span>
+              <span class="text-gray-400 px-1">2</span>
+            </div>
+          </div>
+          
+          <div class="flex flex-col">+ ...</div>
+        </div>
+        <div class="flex flex-col px-2 h-full justify-between my-2">
+          <div class="flex flex-row p-2 bg-gray-50 rounded ">
+            <div class="flex flex-col w-full">
+              <div class="flex flex-row justify-between">
+                <div class="flex flex-col ">
+                  <span class="text-sm">Layout Design</span>
+                </div>
+                <div class="flex flex-col ">
+                  <span class="text-sm">...</span>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <div class="flex flex-row ">
+                  <div class="flex flex-col text-xs p-1 m-1 bg-gray-300/30 text-neutral-600 rounded">Update</div>
+                  <div class="flex flex-col text-xs p-1 m-1 bg-gray-300/30 text-neutral-600 rounded">Web</div>
+                </div>
+                <div class="flex flex-row">
+                  <i class="i-mdi-clock-time-seven-outline text-teal-700"></i>
+                  <span class="text-xs text-neutral-600">12 hour later </span>
+                </div>
+              </div>
+              <div class="flex flex-row  -space-x-1.5 items-center">
+                <div class="flex flex-row  -space-x-4 items-center">
+                  <i class="i-ph-circle-fill text-white"> </i>
+                  <i class="i-ph-circle-duotone text-teal-700/50"> </i>
+                </div>
+                <div class="flex flex-row  -space-x-4 items-center">
+                  <i class="i-ph-circle-fill text-white"> </i>
+                  <i class="i-ph-circle-duotone text-amber-200"> </i>
+                </div>
+                <div class="flex flex-row -space-x-4 items-center">
+                  <i class="i-ph-circle-fill text-white"> </i>
+                  <i class="i-ph-circle-duotone text-blue-300"> </i>
+                  <p class="flex text-xs absolute text-black">+2 </p>
+                </div>
+                <div class="flex flex-row text- items-center">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-row pt-2">
+            <div class="flex flex-col w-full ">
+              <button class="bg-gray-50 rounded h-10 px-2 text-xs text-center text-gray-500">+ Add task</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="flex flex-col rounded-xl h-full w-1/3 bg-gray-200/80">2</div>
       <div class="flex flex-col rounded-xl h-full w-1/3 bg-gray-200/80">3</div>
     </div>
