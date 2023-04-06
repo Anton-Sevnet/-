@@ -4,7 +4,60 @@
 
 </head>
 <body class="flex flex-col bg-teal-100/50 w-screen h-screen place-items-center p-12 font-sans">
-
+<div
+        id="popupCreateTask"
+        class="hidden fixed w-screen h-screen top-0 left-0 bg-black/70 z-10 grid place-items-center"
+>
+  <div class="flex flex-col relative min-w-[377px] bg-white p-6 rounded-2xl gap-y-4">
+    <div class="flex flex-row">
+      <button id="closeBtn">
+        <i class="i-material-symbols-cancel-outline text-neutral-400 absolute top-4 right-6 text-3xl"></i>
+      </button>
+      <span class="text-xl font-bold">Create task</span>
+    </div>
+    <div class="flex flex-row">
+      <div class="flex flex-col w-full">
+        <label class="ml-1 text-sm text-neutral-600" for="inpDate">Title: </label>
+        <input
+                class="bg-neutral-100 p-1.5 rounded w-full border-1 border-neutral-200"
+                id="inpTitle"
+                type="text"
+                placeholder="e.g. Read books"
+        />
+      </div>
+    </div>
+    <div class="flex flex-row">
+      <div class="flex flex-col w-full">
+        <label class="ml-1 text-sm text-neutral-600" for="inpDate">End date: </label>
+        <input
+                class="bg-neutral-100 p-1.5 rounded w-full border-1 border-neutral-200"
+                type="date"
+                id="inpDate"
+                name="trip-start"
+                min="2018-01-01"
+        />
+      </div>
+    </div>
+    <div class="flex flex-row">
+      <div class="flex flex-col w-full">
+        <label for="countries" class="ml-1 text-sm text-neutral-600">Select tag:</label>
+        <select
+                id="countries"
+                class="bg-neutral-100 p-1.5 rounded w-full border-1 border-neutral-200 focus:border-none"
+        >
+          <option selected>Choose a tag</option>
+          <option value="web">Web</option>
+          <option value="update">Update</option>
+          <option value="design">Design</option>
+          <option value="content">Content</option>
+        </select>
+      </div>
+    </div>
+    <div class="flex flex-row pt-2">
+      <button class="bg-teal-600 text-white p-2 rounded-lg w-full font-bold">Create</button>
+    </div>
+  </div>
+</div>
 <div class="container flex flex-row w-full h-full bg-neutral-200 rounded-xl p-4">
   <aside class="flex flex-col  min-w-[144px]">
     <div class="flex flex-row items-center gap-x-2 py-4">
@@ -21,7 +74,7 @@
       </div>
       <div class="flex flex-col">
         <div class="flex flex-row items-center gap-x-4"><span class="text-lg">Search</span>
-          <button class="px-4 py-2 bg-teal-600 rounded-2xl text-white">+Create Task</button>
+          <button id="btnCreateTask" class="px-4 py-2 bg-teal-600 rounded-2xl text-white">+ Create Task</button>
         </div>
       </div>
     </div>
