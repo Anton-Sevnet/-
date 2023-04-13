@@ -4,61 +4,50 @@
   <meta charset='UTF-8'/>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
   <title>Vite App</title>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto:100);
+    
+    body {
+      margin-top: 100px;
+      background-color: #137b85;
+      color: #fff;
+      text-align: center;
+    }
+    
+    h1 {
+      font: 2em 'Roboto', sans-serif;
+      margin-bottom: 40px;
+    }
+    
+    .spinner {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border: 3px solid rgba(255, 255, 255, .3);
+      border-radius: 50%;
+      border-top-color: #fff;
+      animation: spin 1s ease-in-out infinite;
+    }
+    
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
+    @-webkit-keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
 </head>
 <body class='bg-teal-100/50 w-screen h-screen grid place-items-center p-12 font-sans'>
 <div
-        id='popupCreateTask'
+        id='popupContainer'
         class='hidden fixed w-screen h-screen top-0 left-0 bg-black/70 z-10 grid place-items-center'
 >
-  <div class='flex flex-col relative min-w-[377px] bg-white p-6 rounded-2xl gap-y-4'>
-    <button data-id='btnCloseCreateTaskPopup' class='absolute top-7 right-6'>
-      <i class='i-material-symbols-cancel-outline block text-neutral-400 hover:text-neutral-800 text-2xl'></i></button>
-    <div class='flex flex-row'>
-      <span class='text-xl font-bold' data-id="title">Create task</span>
-    </div>
-    <div class='flex flex-row'>
-      <div class='flex flex-col w-full'>
-        <label class='ml-1 text-sm text-neutral-600' for='inpDate'>Title: </label>
-        <input
-                class='bg-neutral-100 p-1.5 rounded w-full border-1 border-neutral-200'
-                id='inpTitle'
-                type='text'
-                placeholder='e.g. Read books'
-        />
-      </div>
-    </div>
-    <div class='flex flex-row'>
-      <div class='flex flex-col w-full'>
-        <label class='ml-1 text-sm text-neutral-600' for='inpDate'>End date: </label>
-        <input
-                class='bg-neutral-100 p-1.5 rounded w-full border-1 border-neutral-200'
-                type='date'
-                id='inpDate'
-                name='trip-start'
-                min='2018-01-01'
-        />
-      </div>
-    </div>
-    <div class='flex flex-row'>
-      <div class='flex flex-col w-full'>
-        <label for='countries' class='ml-1 text-sm text-neutral-600'>Select tag:</label>
-        <select
-                id='countries'
-                class='bg-neutral-100 p-1.5 rounded w-full border-1 border-neutral-200 focus:border-none'
-        >
-          <option selected>Choose a tag</option>
-          <option value='web'>Web</option>
-          <option value='update'>Update</option>
-          <option value='design'>Design</option>
-          <option value='content'>Content</option>
-        </select>
-      </div>
-    </div>
-    <div class='flex flex-row pt-2'>
-      <button data-id='btnConfirmTaskPopup' class='bg-teal-600 text-white p-2 rounded-lg w-full font-bold'>Create
-      </button>
-    </div>
-  </div>
+  <div class="spinner"></div>
 </div>
 <div class='container flex flex-row w-full h-full bg-gray-200 rounded-3xl p-4'>
   <aside class='flex flex-col min-w-[200px]'>

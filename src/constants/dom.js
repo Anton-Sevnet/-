@@ -11,7 +11,7 @@ const Dom = {
     },
   },
   Popup: {
-    CREATE_TASK: 'popupCreateTask',
+    CREATE_TASK: 'popupContainer',
     CreateTask: {
       TITLE: 'title',
     }

@@ -2,6 +2,7 @@ import 'uno.css';
 import '@unocss/reset/tailwind.css';
 import Dom from './src/constants/dom.js';
 import {randomString} from './src/utils/stringUtils.js';
+// import './src/view/popup/TaskPopup.js';
 
 const KEY_LOCAL_TASKS = 'tasks';
 
@@ -45,8 +46,10 @@ domTaskColumn.onclick = (e) => {
 }
 
 getDOM(Dom.Button.CREATE_TASK).onclick = () => {
-  console.log('> domPopupCreateTask.classList');
-  renderTaskPopUp();
+  console.log('> domPopupContainer.classList');
+  renderTaskPopUp('Create task', 'Create', () => {
+    console.log(">Create task -> On Confirm")
+  });
 };
 
 function onCreateTaskClick() {
@@ -63,39 +66,43 @@ function onCreateTaskClick() {
   localStorage.setItem(KEY_LOCAL_TASKS, JSON.stringify(tasks));
 }
 
-function renderTaskPopUp(popupTitle, btnCofirmText, confirmCallback) {
+async function renderTaskPopUp(popupTitle, confirmText, confirmCallback, closeCallback) {
 
-  const domPopupCreateTask = getDOM(Dom.Popup.CREATE_TASK);
-  const domBtnConfirm = QUERY(
-    domPopupCreateTask,
-    Dom.Button.POPUP_CREATE_TASK_CONFIRM,
+  const domPopupContainer = getDOM(Dom.Popup.CREATE_TASK);
+  const domSpinner = domPopupContainer.querySelector('.spinner');
+
+  domPopupContainer.classList.remove('hidden');
+
+  const onClose = () => {
+    domPopupContainer.innerHTML = '';
+    domPopupContainer.append(domSpinner);
+    domPopupContainer.classList.add('hidden');
+  }
+
+  const TaskPopup = (await import('./src/view/popup/TaskPopup')).default;
+  const taskPopupInstance = new TaskPopup(
+    popupTitle,
+    Tags,
+    confirmText,
+    (title, date, tag) => {
+      confirmCallback(title, date, tag);
+      onClose();
+    },
+    onClose
   );
-  const domBtnClose = QUERY(
-    domPopupCreateTask,
-    Dom.Button.CLOSE_POPUP_CREATE_TASK,
-  );
+  setTimeout(() => {
+    domPopupContainer.removeChild(domSpinner);
+    domPopupContainer.append(taskPopupInstance.render());
+  }, 100);
 
-  const domTitle = QUERY(domPopupCreateTask, Dom.Popup.CreateTask.TITLE);
-  domBtnConfirm.innerText = btnCofirmText;
-  domTitle.innerText = popupTitle;
+  domPopupContainer.querySelector('.spinner').classList.add('hidden');
+  // domPopupContainer.append(taskPopupInstance.render());
 
-  domPopupCreateTask.classList.remove('hidden');
+  console.log(TaskPopup);
 
-  const onClosePopup = () => {
-    domPopupCreateTask.classList.add('hidden');
-    domBtnClose.onclick = null;
-    domBtnConfirm.onclick = null;
-  };
+  return;
 
-  domBtnClose.onclick = () => {
-    domPopupCreateTask.classList.add('hidden');
-    domBtnClose.onclick = null;
-  };
 
-  domBtnConfirm.onclick = () => {
-    if (confirmCallback) confirmCallback();
-    onClosePopup();
-  };
 }
 
 function renderTask(taskVO) {
