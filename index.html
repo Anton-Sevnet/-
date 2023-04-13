@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-  <meta charset='UTF-8' />
-  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <meta charset='UTF-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
   <title>Vite App</title>
 </head>
 <body class='bg-teal-100/50 w-screen h-screen grid place-items-center p-12 font-sans'>
 <div
-  id='popupCreateTask'
-  class='hidden fixed w-screen h-screen top-0 left-0 bg-black/70 z-10 grid place-items-center'
+        id='popupCreateTask'
+        class='hidden fixed w-screen h-screen top-0 left-0 bg-black/70 z-10 grid place-items-center'
 >
   <div class='flex flex-col relative min-w-[377px] bg-white p-6 rounded-2xl gap-y-4'>
     <button data-id='btnCloseCreateTaskPopup' class='absolute top-7 right-6'>
       <i class='i-material-symbols-cancel-outline block text-neutral-400 hover:text-neutral-800 text-2xl'></i></button>
     <div class='flex flex-row'>
-      <span class='text-xl font-bold'>Create task</span>
+      <span class='text-xl font-bold' data-id="title">Create task</span>
     </div>
     <div class='flex flex-row'>
       <div class='flex flex-col w-full'>
         <label class='ml-1 text-sm text-neutral-600' for='inpDate'>Title: </label>
         <input
-          class='bg-neutral-100 p-1.5 rounded w-full border-1 border-neutral-200'
-          id='inpTitle'
-          type='text'
-          placeholder='e.g. Read books'
+                class='bg-neutral-100 p-1.5 rounded w-full border-1 border-neutral-200'
+                id='inpTitle'
+                type='text'
+                placeholder='e.g. Read books'
         />
       </div>
     </div>
@@ -31,11 +31,11 @@
       <div class='flex flex-col w-full'>
         <label class='ml-1 text-sm text-neutral-600' for='inpDate'>End date: </label>
         <input
-          class='bg-neutral-100 p-1.5 rounded w-full border-1 border-neutral-200'
-          type='date'
-          id='inpDate'
-          name='trip-start'
-          min='2018-01-01'
+                class='bg-neutral-100 p-1.5 rounded w-full border-1 border-neutral-200'
+                type='date'
+                id='inpDate'
+                name='trip-start'
+                min='2018-01-01'
         />
       </div>
     </div>
@@ -43,8 +43,8 @@
       <div class='flex flex-col w-full'>
         <label for='countries' class='ml-1 text-sm text-neutral-600'>Select tag:</label>
         <select
-          id='countries'
-          class='bg-neutral-100 p-1.5 rounded w-full border-1 border-neutral-200 focus:border-none'
+                id='countries'
+                class='bg-neutral-100 p-1.5 rounded w-full border-1 border-neutral-200 focus:border-none'
         >
           <option selected>Choose a tag</option>
           <option value='web'>Web</option>
@@ -71,7 +71,7 @@
         <div class='flex flex-row gap-x-3 py-2'>
           <i class='i-material-symbols:account-circle text-4xl py-6'></i>
           <div class='flex flex-col'>
-            <span class='font-bold'>Olga Karachentseva</span>
+            <span class='font-bold'>Anton Paschenko</span>
             <span class='text-neutral-600'>Premium account</span>
           </div>
         </div>
@@ -142,8 +142,8 @@
         </div>
       </div>
     </div>
-
-
+  
+  
   </aside>
   <main class='flex flex-col bg-gray-50 rounded-2xl w-full px-4 pt-2 gap-y-2'>
     <div class='flex flex-row justify-between items-center'>
@@ -153,7 +153,7 @@
       <div class='flex flex-col'>
         <div class='flex flex-row justify-between items-center gap-x-4'>
           <span
-            class='text-neutral-400 bg-gray-200 border shadow-inner pl-2 pr-20 py-2 rounded-lg'>Search</span>
+                  class='text-neutral-400 bg-gray-200 border shadow-inner pl-2 pr-20 py-2 rounded-lg'>Search</span>
           <button id='btnCreateTask' class='px-4 py-2 bg-teal-600 rounded-lg'>
             <span class='text-white'>+ Create Task</span>
           </button>
@@ -187,7 +187,7 @@
         </div>
       </div>
     </div>
-    <hr />
+    <hr/>
     <div class='flex flex-col h-full justify-between'>
       <div class='flex flex-row justify-between gap-x-4'>
         <div class='flex flex-col h-full w-1/3 bg-gray-200 border-1 border-gray-300/50 p-2 rounded-xl'>
@@ -202,9 +202,9 @@
             <div class='flex flex-col justify-start w-full gap-y-4 justify-between'>
               <div id='templateTask'
                    class='flex flex-row shadow rounded-lg p-3 bg-neutral-50 border-1 border-neutral-100'>
-                <div class='flex flex-col w-full gap-y-3'>
+                <div class='flex flex-col w-full gap-y-3 pointer-events-none'>
                   <span data-id='templateTaskTitle' class='font-bold'>Layout Design</span>
-                  <div class='flex flex-row justify-between'>
+                  <div class='flex flex-row justify-between '>
                     <div class='flex flex-row gap-x-2'>
                       <div class='text-xs rounded-lg py-1 px-2 bg-neutral-200/60 text-neutral-600'>
                         Update

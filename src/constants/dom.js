@@ -12,6 +12,9 @@ const Dom = {
   },
   Popup: {
     CREATE_TASK: 'popupCreateTask',
+    CreateTask: {
+      TITLE: 'title',
+    }
   },
 };
 export default Dom;
