@@ -39,7 +39,7 @@ class TaskPopup {
               class="bg-neutral-100 p-1.5 rounded w-full border-1 border-neutral-200"
               data-id="inpTitle"
               type="text"
-              value="Новая задача"
+              value="${this.#taskTitle}"
               placeholder="e.g. Read books"
             />
           </div>

@@ -8,6 +8,8 @@ const Dom = {
     TASK: 'templateTask',
     Task: {
       TITLE: 'templateTaskTitle',
+      BTN_EDIT: 'btnEdit',
+      BTN_DELETE: 'btnDelete',
     },
   },
   Popup: {
