@@ -1,273 +1,275 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-  <meta charset='UTF-8'/>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
-  <title>Vite App</title>
-  <style>
-    @import url(https://fonts.googleapis.com/css?family=Roboto:100);
-    
-    body {
-      margin-top: 100px;
-      background-color: #137b85;
-      color: #fff;
-      text-align: center;
-    }
-    
-    h1 {
-      font: 2em 'Roboto', sans-serif;
-      margin-bottom: 40px;
-    }
-    
-    .spinner {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      border: 3px solid rgba(255, 255, 255, .3);
-      border-radius: 50%;
-      border-top-color: #fff;
-      animation: spin 1s ease-in-out infinite;
-    }
-    
-    @keyframes spin {
-      to {
-        transform: rotate(360deg);
-      }
-    }
-    
-    @-webkit-keyframes spin {
-      to {
-        transform: rotate(360deg);
-      }
-    }
-  </style>
+    <meta charset='UTF-8'/>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+    <title>Vite App</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:100);
+
+        body {
+            margin-top: 100px;
+            background-color: #137b85;
+            color: #fff;
+            text-align: center;
+        }
+
+        h1 {
+            font: 2em 'Roboto', sans-serif;
+            margin-bottom: 40px;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgba(255, 255, 255, .3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
 <body class='bg-teal-100/50 w-screen h-screen grid place-items-center p-12 font-sans text-black'>
 <div
         id='popupContainer'
         class='hidden fixed w-screen h-screen top-0 left-0 bg-black/70 z-10 grid place-items-center'
 >
-  <div class="spinner"></div>
+    <div class="spinner"></div>
 </div>
 <div class='container flex flex-row w-full h-full bg-gray-200 rounded-3xl p-4'>
-  <aside class='flex flex-col min-w-[200px]'>
-    <div class='flex flex-col h-full justify-between'>
-      <div class='flex flex-row items-center gap-x-2 py-4'>
-        <i class='i-ph-cube-focus-bold text-teal-700 text-4xl'></i>
-        <span class='font-bold text-xl'>Taski</span>
-      </div>
-      <div class='flex flex-col mr-4 pb-3 border-b border-neutral-300'>
-        <div class='flex flex-row gap-x-3 py-2'>
-          <i class='i-material-symbols:account-circle text-4xl py-6'></i>
-          <div class='flex flex-col'>
-            <span class='font-bold'>Anton Paschenko</span>
-            <span class='text-neutral-600'>Premium account</span>
-          </div>
-        </div>
-        <div class='flex flex-col gap-y-2 text-neutral-600'>
-          <div class='flex flex-row justify-between items-center '>
-            <div class='flex flex-row items-center'>
-              <i class='i-fluent:pulse-24-filled text-xl'></i>
-              <span class='px-2'>Activity</span>
+    <aside class='flex flex-col min-w-[200px]'>
+        <div class='flex flex-col h-full justify-between'>
+            <div class='flex flex-row items-center gap-x-2 py-4'>
+                <i class='i-ph-cube-focus-bold text-teal-700 text-4xl'></i>
+                <span class='font-bold text-xl'>Taski</span>
             </div>
-            <div class='bg-teal-600 text-white rounded-xl px-3'>3</div>
-          </div>
-          <div class='flex flex-row items-center pr-6'>
-            <i class='i-material-symbols:person text-xl'></i>
-            <span class='px-2'>My Profile</span>
-          </div>
-        </div>
-      </div>
-      <div class='flex flex-col mr-4 gap-y-2 pb-3'>
-        <div class='flex flex-row justify-between items-center gap-x-3 py-2'>
-          <span class='font-bold'>Pages</span>
-          <i class='i-mdi-chevron-up bg-neutral-600 py-6 hover:bg-neutral-800'></i>
-        </div>
-        <div class='flex flex-col gap-y-2 text-neutral-600'>
-          <div class='flex flex-row justify-between items-center '>
-            <div class='flex flex-row items-center hover:text-teal-800'>
-              <i class='i-ic:outline-dashboard text-xl'></i>
-              <span class='px-2'>Dashboard</span>
+            <div class='flex flex-col mr-4 pb-3 border-b border-neutral-300'>
+                <div class='flex flex-row gap-x-3 py-2'>
+                    <i class='i-material-symbols:account-circle text-4xl py-6'></i>
+                    <div class='flex flex-col'>
+                        <span class='font-bold'>Anton Paschenko</span>
+                        <span class='text-neutral-600'>Premium account</span>
+                    </div>
+                </div>
+                <div class='flex flex-col gap-y-2 text-neutral-600'>
+                    <div class='flex flex-row justify-between items-center '>
+                        <div class='flex flex-row items-center'>
+                            <i class='i-fluent:pulse-24-filled text-xl'></i>
+                            <span class='px-2'>Activity</span>
+                        </div>
+                        <div class='bg-teal-600 text-white rounded-xl px-3'>3</div>
+                    </div>
+                    <div class='flex flex-row items-center pr-6'>
+                        <i class='i-material-symbols:person text-xl'></i>
+                        <span class='px-2'>My Profile</span>
+                    </div>
+                </div>
             </div>
-            <div class='bg-teal-600 text-white rounded-xl px-3'></div>
-          </div>
-        </div>
-        <div class='flex flex-col gap-y-2 text-neutral-600'>
-          <div class='flex flex-row justify-between items-center '>
-            <div class='flex flex-row items-center hover:text-teal-800'>
-              <i class='i-material-symbols:task-outline text-xl'></i>
-              <span class='px-2'>Tasks</span>
+            <div class='flex flex-col mr-4 gap-y-2 pb-3'>
+                <div class='flex flex-row justify-between items-center gap-x-3 py-2'>
+                    <span class='font-bold'>Pages</span>
+                    <i class='i-mdi-chevron-up bg-neutral-600 py-6 hover:bg-neutral-800'></i>
+                </div>
+                <div class='flex flex-col gap-y-2 text-neutral-600'>
+                    <div class='flex flex-row justify-between items-center '>
+                        <div class='flex flex-row items-center hover:text-teal-800'>
+                            <i class='i-ic:outline-dashboard text-xl'></i>
+                            <span class='px-2'>Dashboard</span>
+                        </div>
+                        <div class='bg-teal-600 text-white rounded-xl px-3'></div>
+                    </div>
+                </div>
+                <div class='flex flex-col gap-y-2 text-neutral-600'>
+                    <div class='flex flex-row justify-between items-center '>
+                        <div class='flex flex-row items-center hover:text-teal-800'>
+                            <i class='i-material-symbols:task-outline text-xl'></i>
+                            <span class='px-2'>Tasks</span>
+                        </div>
+                        <div class='bg-teal-600 text-white rounded-xl px-3'></div>
+                    </div>
+                </div>
+                <div class='flex flex-col gap-y-2 text-neutral-600'>
+                    <div class='flex flex-row justify-between items-center '>
+                        <div class='flex flex-row items-center hover:text-teal-800'>
+                            <i class='i-fluent:people-team-24-regular text-xl'></i>
+                            <span class='px-2'>Teams</span>
+                        </div>
+                        <div class='bg-teal-600 text-white rounded-xl px-3'></div>
+                    </div>
+                </div>
+                <div class='flex flex-col gap-y-2 text-neutral-600'>
+                    <div class='flex flex-row justify-between items-center '>
+                        <div class='flex flex-row items-center hover:text-teal-800'>
+                            <i class='i-ic:outline-message text-xl'></i>
+                            <span class='px-2'>Messages</span>
+                        </div>
+                        <div class='bg-teal-600 text-white rounded-xl px-3'></div>
+                    </div>
+                </div>
             </div>
-            <div class='bg-teal-600 text-white rounded-xl px-3'></div>
-          </div>
-        </div>
-        <div class='flex flex-col gap-y-2 text-neutral-600'>
-          <div class='flex flex-row justify-between items-center '>
-            <div class='flex flex-row items-center hover:text-teal-800'>
-              <i class='i-fluent:people-team-24-regular text-xl'></i>
-              <span class='px-2'>Teams</span>
+            <div class='flex flex-col text-neutral-400 text-sm'>
+                <div class='flex flex-row items-center'>
+                    <i class='i-material-symbols:info-outline'></i>
+                    <span>Help Center</span>
+                </div>
+                <div class='flex flex-row items-center'>
+                    <i class='i-material-symbols:logout'></i>
+                    <span>Log out</span>
+                </div>
             </div>
-            <div class='bg-teal-600 text-white rounded-xl px-3'></div>
-          </div>
         </div>
-        <div class='flex flex-col gap-y-2 text-neutral-600'>
-          <div class='flex flex-row justify-between items-center '>
-            <div class='flex flex-row items-center hover:text-teal-800'>
-              <i class='i-ic:outline-message text-xl'></i>
-              <span class='px-2'>Messages</span>
+
+
+    </aside>
+    <main class='flex flex-col bg-gray-50 rounded-2xl w-full px-4 pt-2 gap-y-2'>
+        <div class='flex flex-row justify-between items-center'>
+            <div class='flex flex-col'>
+                <span class='text-lg font-bold'>Team Task</span>
             </div>
-            <div class='bg-teal-600 text-white rounded-xl px-3'></div>
-          </div>
-        </div>
-      </div>
-      <div class='flex flex-col text-neutral-400 text-sm'>
-        <div class='flex flex-row items-center'>
-          <i class='i-material-symbols:info-outline'></i>
-          <span>Help Center</span>
-        </div>
-        <div class='flex flex-row items-center'>
-          <i class='i-material-symbols:logout'></i>
-          <span>Log out</span>
-        </div>
-      </div>
-    </div>
-  
-  
-  </aside>
-  <main class='flex flex-col bg-gray-50 rounded-2xl w-full px-4 pt-2 gap-y-2'>
-    <div class='flex flex-row justify-between items-center'>
-      <div class='flex flex-col'>
-        <span class='text-lg font-bold'>Team Task</span>
-      </div>
-      <div class='flex flex-col'>
-        <div class='flex flex-row justify-between items-center gap-x-4'>
+            <div class='flex flex-col'>
+                <div class='flex flex-row justify-between items-center gap-x-4'>
           <span
                   class='text-neutral-400 bg-gray-200 border shadow-inner pl-2 pr-20 py-2 rounded-lg'>Search</span>
-          <button id='btnCreateTask' class='px-4 py-2 bg-teal-600 rounded-lg'>
-            <span class='text-white'>+ Create Task</span>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class='flex flex-row justify-between items-center'>
-      <div class='flex flex-col'>
-        <div class='flex flex-row items-center gap-x-1 text-neutral-400'>
-          <i class='i-mdi-filter hover:bg-neutral-600'></i>
-          <span class='text-sm'>Filters</span>
-          <i class='i-mdi-chevron-down hover:bg-neutral-600'></i></div>
-      </div>
-      <div class='flex flex-col'>
-        <div class='flex flex-row items-center gap-x-8'>
-          <div class='flex flex-row text-neutral-400 gap-x-1'>
-            <span class='text-xs'>Sort by</span>
-            <i class='i-mdi-chevron-down hover:bg-neutral-600'></i>
-          </div>
-          <div class='flex flex-row'>
-            <div class='flex flex-col'>
-              <div class='flex flex-row text-neutral-400'>
-                <span class='text-xs'>Group by:</span>
-                <div class='flex flex-row'>
-                  <span class='text-xs'> Status</span>
-                  <i class='i-mdi-chevron-down hover:bg-neutral-600'></i>
+                    <button id='btnCreateTask' class='px-4 py-2 bg-teal-600 rounded-lg'>
+                        <span class='text-white'>+ Create Task</span>
+                    </button>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <hr/>
-    <div class='flex flex-col h-full justify-between'>
-      <div class='flex flex-row justify-between gap-x-4'>
-        <div class='flex flex-col h-full w-1/3 bg-gray-200 border-1 border-gray-300/50 p-2 rounded-xl'>
-          <div class='flex flex-row justify-between p-1'>
-            <div class='flex flex-row font-bold gap-x-1'>
-              <span>To Do</span>
-              <span class='text-gray-400'>2</span>
+        <div class='flex flex-row justify-between items-center'>
+            <div class='flex flex-col'>
+                <div class='flex flex-row items-center gap-x-1 text-neutral-400'>
+                    <i class='i-mdi-filter hover:bg-neutral-600'></i>
+                    <span class='text-sm'>Filters</span>
+                    <i class='i-mdi-chevron-down hover:bg-neutral-600'></i></div>
             </div>
-            <div class='flex flex-col text-neutral-500'>+ ...</div>
-          </div>
-          <div class='flex flex-row pt-2'>
-            <div class='flex flex-col justify-start w-full gap-y-4 justify-between'>
-              <div id='templateTask'
-                   class='flex flex-row shadow rounded-lg p-3 bg-neutral-50 border-1 border-neutral-100'>
-                <div class='flex flex-col w-full gap-y-3'>
-                  <span data-id='templateTaskTitle' class='font-bold pointer-events-none'>Layout Design</span>
-                  <div class='flex flex-row justify-between pointer-events-none'>
-                    <div class='flex flex-row gap-x-2'>
-                      <div class='text-xs rounded-lg py-1 px-2 bg-neutral-200/60 text-neutral-600'>
-                        Update
-                      </div>
-                      <div class='text-xs rounded-lg py-1 px-2 bg-neutral-200/60 text-neutral-600'>
-                        Web
-                      </div>
+            <div class='flex flex-col'>
+                <div class='flex flex-row items-center gap-x-8'>
+                    <div class='flex flex-row text-neutral-400 gap-x-1'>
+                        <span class='text-xs'>Sort by</span>
+                        <i class='i-mdi-chevron-down hover:bg-neutral-600'></i>
                     </div>
-                    <div class='flex flex-row items-center gap-x-1'>
-                      <div class='i-mdi-clock-time-eight-outline bg-green-600'></div>
-                      <div class='text-xs text-neutral-400'>12 days left</div>
+                    <div class='flex flex-row'>
+                        <div class='flex flex-col'>
+                            <div class='flex flex-row text-neutral-400'>
+                                <span class='text-xs'>Group by:</span>
+                                <div class='flex flex-row'>
+                                    <span class='text-xs'> Status</span>
+                                    <i class='i-mdi-chevron-down hover:bg-neutral-600'></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class='flex flex-row justify-between'>
-                    <div class='flex flex-row -space-x-2 pointer-events-none'>
-                      <span class='w-6 h-6 rounded-full bg-green-300 border-2 border-green-500'></span>
-                      <span class='w-6 h-6 rounded-full bg-yellow-300 border-2 border-yellow-500'></span>
-                      <span class='grid place-items-center w-6 h-6 rounded-full bg-blue-300 border-2 border-blue-500'>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class='flex flex-col h-full justify-between'>
+            <div class='flex flex-row justify-between gap-x-4'>
+                <div class='flex flex-col h-full w-1/3 bg-gray-200 border-1 border-gray-300/50 p-2 rounded-xl'>
+                    <div class='flex flex-row justify-between p-1'>
+                        <div class='flex flex-row font-bold gap-x-1'>
+                            <span>To Do</span>
+                            <span class='text-gray-400'>2</span>
+                        </div>
+                        <div class='flex flex-col text-neutral-500'>+ ...</div>
+                    </div>
+                    <div class='flex flex-row pt-2'>
+                        <div data-test-id="tasks-column"
+                             class='flex flex-col justify-start w-full gap-y-4 justify-between'>
+                            <div id='templateTask'
+                                 class='flex flex-row shadow rounded-lg p-3 bg-neutral-50 border-1 border-neutral-100'>
+                                <div class='flex flex-col w-full gap-y-3'>
+                                    <span data-id='templateTaskTitle' class='font-bold pointer-events-none'>Layout Design</span>
+                                    <div class='flex flex-row justify-between pointer-events-none'>
+                                        <div class='flex flex-row gap-x-2'>
+                                            <div class='text-xs rounded-lg py-1 px-2 bg-neutral-200/60 text-neutral-600'>
+                                                Update
+                                            </div>
+                                            <div class='text-xs rounded-lg py-1 px-2 bg-neutral-200/60 text-neutral-600'>
+                                                Web
+                                            </div>
+                                        </div>
+                                        <div class='flex flex-row items-center gap-x-1'>
+                                            <div class='i-mdi-clock-time-eight-outline bg-green-600'></div>
+                                            <div class='text-xs text-neutral-400'>12 days left</div>
+                                        </div>
+                                    </div>
+                                    <div class='flex flex-row justify-between'>
+                                        <div class='flex flex-row -space-x-2 pointer-events-none'>
+                                            <span class='w-6 h-6 rounded-full bg-green-300 border-2 border-green-500'></span>
+                                            <span class='w-6 h-6 rounded-full bg-yellow-300 border-2 border-yellow-500'></span>
+                                            <span class='grid place-items-center w-6 h-6 rounded-full bg-blue-300 border-2 border-blue-500'>
                         <span class='text-xs font-bold text-blue-600'>+2</span>
                       </span>
-                    
+
+                                        </div>
+                                        <div class="flex flex-row gap-1">
+                                            <button data-btn="btnEdit" class="text-neutral-400 hover:text-neutral-800">
+                                                <i
+                                                        class="i-mdi-square-edit-outline block  text-2xl pointer-events-none"></i>
+                                            </button>
+                                            <button data-btn="btnDelete"
+                                                    class="text-neutral-400 hover:text-neutral-800">
+                                                <i
+                                                        class="i-mdi-delete-forever-outline block text-2xl pointer-events-none"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class='rounded-lg bg-neutral-50 w-full py-2 shadow text-neutral-500'>
+                                + Add task
+                            </button>
+                        </div>
                     </div>
-                    <div class="flex flex-row gap-1">
-                      <button data-btn="btnEdit" class="text-neutral-400 hover:text-neutral-800">
-                        <i
-                                class="i-mdi-square-edit-outline block  text-2xl pointer-events-none"></i>
-                      </button>
-                      <button data-btn="btnDelete" class="text-neutral-400 hover:text-neutral-800">
-                        <i
-                                class="i-mdi-delete-forever-outline block text-2xl pointer-events-none"></i>
-                      </button>
-                    </div>
-                  </div>
                 </div>
-              </div>
-              <button class='rounded-lg bg-neutral-50 w-full py-2 shadow text-neutral-500'>
-                + Add task
-              </button>
+                <div class='flex flex-col h-full w-1/3 bg-gray-200 border-1 border-gray-300/50 p-2 rounded-xl'>
+                    <div class='flex flex-row justify-between p-1'>
+                        <div class='flex flex-row font-bold gap-x-1'>
+                            <span>In progress</span>
+                            <span class='text-gray-400'></span>
+                        </div>
+                        <div class='flex flex-col text-neutral-500'></div>
+                    </div>
+                    <div class='flex flex-row pt-2'>
+                    </div>
+                </div>
+                <div class='flex flex-col h-full w-1/3 bg-gray-200 border-1 border-gray-300/50 p-2 rounded-xl'>
+                    <div class='flex flex-row justify-between p-1'>
+                        <div class='flex flex-row font-bold gap-x-1'>
+                            <span>Ready</span>
+                            <span class='text-gray-400'></span>
+                        </div>
+                        <div class='flex flex-col text-neutral-500'></div>
+                    </div>
+                    <div class='flex flex-row pt-2'>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class='flex flex-col h-full w-1/3 bg-gray-200 border-1 border-gray-300/50 p-2 rounded-xl'>
-          <div class='flex flex-row justify-between p-1'>
-            <div class='flex flex-row font-bold gap-x-1'>
-              <span>In progress</span>
-              <span class='text-gray-400'></span>
+            <div class='flex flex-row'>
+                <div class='flex flex-col'>
+                    <div class='flex flex-row text-neutral-400 py-3'>
+                        <span class='text-xs'> 10 tasks</span>
+                        <i class='i-mdi-chevron-down hover:bg-neutral-600'></i>
+                    </div>
+                </div>
             </div>
-            <div class='flex flex-col text-neutral-500'></div>
-          </div>
-          <div class='flex flex-row pt-2'>
-          </div>
         </div>
-        <div class='flex flex-col h-full w-1/3 bg-gray-200 border-1 border-gray-300/50 p-2 rounded-xl'>
-          <div class='flex flex-row justify-between p-1'>
-            <div class='flex flex-row font-bold gap-x-1'>
-              <span>Ready</span>
-              <span class='text-gray-400'></span>
-            </div>
-            <div class='flex flex-col text-neutral-500'></div>
-          </div>
-          <div class='flex flex-row pt-2'>
-          </div>
-        </div>
-      </div>
-      <div class='flex flex-row'>
-        <div class='flex flex-col'>
-          <div class='flex flex-row text-neutral-400 py-3'>
-            <span class='text-xs'> 10 tasks</span>
-            <i class='i-mdi-chevron-down hover:bg-neutral-600'></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
+    </main>
 </div>
 <script type='module' src='main.js'></script>
 </body>

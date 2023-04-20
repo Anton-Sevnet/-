@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "allowJs": true,
+    "module": "es6",
     "target": "es5",
     "lib": [
       "es5",
@@ -11,6 +13,6 @@
     ]
   },
   "include": [
-    "**/*.ts"
+    "**/*.*"
   ]
 }
