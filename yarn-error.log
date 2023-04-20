@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add -D @iconify-json
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add -D cyperss
 
 PATH: 
   C:\Python311\Scripts\;C:\Python311\;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;C:\Program Files (x86)\Common Files\Acronis\VirtualFile\;C:\Program Files (x86)\Common Files\Acronis\VirtualFile64\;C:\Program Files (x86)\Common Files\Acronis\FileProtector\;C:\Program Files (x86)\Common Files\Acronis\FileProtector64\;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\Windows Kits\10\Microsoft Application Virtualization\Sequencer\;C:\Program Files\Windows Imaging\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\sevne\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\sevne\AppData\Local\Microsoft\WindowsApps;C:\Users\sevne\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\WebStorm 2022.2\bin;C:\Users\sevne\AppData\Roaming\npm;C:\Users\sevne\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\sevne\Documents\Обучение ИТМО\node_modules\.bin
@@ -14,8 +14,8 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@iconify-json: Request "https://registry.yarnpkg.com/@iconify-json" returned a 405
-      at params.callback [as _callback] (C:\Users\sevne\AppData\Roaming\nvm\v19.7.0\node_modules\yarn\lib\cli.js:66154:18)
+  Error: https://registry.yarnpkg.com/cyperss: Not found
+      at params.callback [as _callback] (C:\Users\sevne\AppData\Roaming\nvm\v19.7.0\node_modules\yarn\lib\cli.js:66145:18)
       at self.callback (C:\Users\sevne\AppData\Roaming\nvm\v19.7.0\node_modules\yarn\lib\cli.js:140890:22)
       at Request.emit (node:events:512:28)
       at Request.<anonymous> (C:\Users\sevne\AppData\Roaming\nvm\v19.7.0\node_modules\yarn\lib\cli.js:141862:10)
@@ -38,8 +38,10 @@ npm manifest:
       "preview": "vite preview"
     },
     "devDependencies": {
+      "@iconify/json": "^2.2.42",
       "@unocss/preset-icons": "^0.50.6",
       "@unocss/preset-uno": "^0.50.6",
+      "@unocss/preset-web-fonts": "^0.50.6",
       "@unocss/reset": "^0.50.6",
       "autoprefixer": "^10.4.14",
       "postcss": "^8.4.21",
@@ -195,7 +197,15 @@ Lockfile:
     resolved "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.17.14.tgz"
     integrity sha512-gPQmsi2DKTaEgG14hc3CHXHp62k8g6qr0Pas+I4lUxRMugGSATh/Bi8Dgusoz9IQ0IfdrvLpco6kujEIBoaogA==
   
-  "@iconify/types@^2.0.0":
+  "@iconify/json@^2.2.42":
+    version "2.2.42"
+    resolved "https://registry.yarnpkg.com/@iconify/json/-/json-2.2.42.tgz#e02abad9ab9120a45620abbc19bb4877442cf2d5"
+    integrity sha512-CLZHgcBIqNuy9lRwHjuvFb++OcqJFjJmr5Rg8MZ8Dc/hfcpU9L5IW4O3oB2UPQecXMKswZLoamfFajBAt03igw==
+    dependencies:
+      "@iconify/types" "*"
+      pathe "^1.0.0"
+  
+  "@iconify/types@*", "@iconify/types@^2.0.0":
     version "2.0.0"
     resolved "https://registry.yarnpkg.com/@iconify/types/-/types-2.0.0.tgz#ab0e9ea681d6c8a1214f30cd741fe3a20cc57f57"
     integrity sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==
@@ -391,7 +401,7 @@ Lockfile:
       "@unocss/preset-mini" "0.50.6"
       "@unocss/preset-wind" "0.50.6"
   
-  "@unocss/preset-web-fonts@0.50.6":
+  "@unocss/preset-web-fonts@0.50.6", "@unocss/preset-web-fonts@^0.50.6":
     version "0.50.6"
     resolved "https://registry.yarnpkg.com/@unocss/preset-web-fonts/-/preset-web-fonts-0.50.6.tgz#710e5b06f01f421441c3b8c5cfc8acf9295a1b8e"
     integrity sha512-81meQMAq2lOy7k5qHQZ2EGWN5iJQUJOLl8dc9dxIo1eZPgiZQruxTVr4AkNVH5LRFcjHs/1sDb2CYxAiakwTVg==
@@ -1043,7 +1053,7 @@ Lockfile:
     resolved "https://registry.npmjs.org/path-parse/-/path-parse-1.0.7.tgz"
     integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
   
-  pathe@^1.1.0:
+  pathe@^1.0.0, pathe@^1.1.0:
     version "1.1.0"
     resolved "https://registry.yarnpkg.com/pathe/-/pathe-1.1.0.tgz#e2e13f6c62b31a3289af4ba19886c230f295ec03"
     integrity sha512-ODbEPR0KKHqECXW1GoxdDb+AZvULmXjVPy4rt+pGo2+TnjJTIPJQSVS6N63n8T2Ip+syHhbn52OewKicV0373w==
