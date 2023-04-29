@@ -9,6 +9,10 @@ class TasksModel {
 
 	set tasks(value) {
 		this.#tasks = value;
+		this.#update();
+	}
+
+	#update() {
 		this.#updateCallBack.forEach(c => c(this.#tasks));
 	}
 
@@ -18,6 +22,12 @@ class TasksModel {
 
 		}
 		this.#updateCallBack.push(updateCallback);
+	}
+
+	addTask(taskVO) {
+		console.log('> TasksModel -> addTask:', taskVO);
+		this.#tasks.push(taskVO);
+		this.#update();
 	}
 }
 

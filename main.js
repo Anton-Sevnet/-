@@ -50,6 +50,17 @@ async function main() {
 				'Create',
 				(taskTitle, taskDate, taskTags) => {
 					console.log('> Create task -> On Confirm');
+					tasksController
+						.createTask(taskTitle, taskDate, taskTags)
+						.then((e) => {
+							console.log('> Create task -> On Confirm: Success', e);
+
+						})
+						.catch((error) => {
+							console.log('> Create task -> On Confirm: Error', error);
+
+						})
+
 					const taskId = `task_${Date.now()}`;
 					const taskVO = new TaskVO(taskId, taskTitle, taskDate, taskTags);
 

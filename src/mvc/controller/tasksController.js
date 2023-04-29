@@ -28,7 +28,7 @@ class TasksController {
 	createTask(taskTitle, taskDate, taskTags) {
 		console.log('> TasksController -> createTask');
 
-		fetch('http://localhost:3000/tasks', {
+		return fetch('http://localhost:3000/tasks', {
 
 			method: 'POST',
 			headers: {
@@ -38,8 +38,16 @@ class TasksController {
 				title: taskTitle,
 				date: taskDate,
 				tags: taskTags,
-			}),
-		});
+			})
+
+		}).then((response) => response.json())
+			.then(data => {
+				console.log('> TaskController -> createTask: data ', data);
+				const taskVO = TaskVO.fromJSON(data);
+				this.#model.addTask(taskVO);
+			}).catch((e) => {
+				console.error('> TaskController -> createTask: data ', e);
+			});
 
 		const taskId = `task_${Date.now()}`;
 		const taskVO = new TaskVO(taskId, taskTitle, taskDate, taskTags);
