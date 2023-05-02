@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f89c7672-bf74-4c6d-861a-509d264d7e5d" name="Changes" comment="Html lesson base tags" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" show_ignored="true" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2MmoaVBg2Kp1od0FrULmSfKxH3o" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;19.7.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.15.11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sevne/Documents/Обучение ИТМО/cypress/e2e/1-getting-started&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\sevne\\Documents\\Обучение ИТМО\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\sevne\\Documents\\Обучение ИТМО\\node_modules\\typescript\\lib&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;C:/Users/sevne/Documents/Обучение ИТМО/main.ts&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;GitIgnore&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sevne\Documents\Обучение ИТМО\cypress" />
+      <recent name="C:\Users\sevne\Documents\Обучение ИТМО\public" />
+      <recent name="C:\Users\sevne\Documents\Обучение ИТМО\dist" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sevne\Documents\Обучение ИТМО\src\mvc" />
+      <recent name="C:\Users\sevne\Documents\Обучение ИТМО\cypress\e2e\1-getting-started" />
+      <recent name="C:\Users\sevne\Documents\Обучение ИТМО" />
+      <recent name="C:\Users\sevne\Documents\Обучение ИТМО\public" />
+      <recent name="C:\Users\sevne\Documents\Обучение ИТМО\assets" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="tailwind.config.cjs" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/tailwind.config.cjs" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.tailwind.config.cjs" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f89c7672-bf74-4c6d-861a-509d264d7e5d" name="Changes" comment="" />
+      <created>1678382182000</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678382182000</updated>
+      <workItem from="1678382183328" duration="252000" />
+      <workItem from="1678382778691" duration="2178000" />
+      <workItem from="1678385735233" duration="236000" />
+      <workItem from="1678385978014" duration="2239000" />
+      <workItem from="1678519164453" duration="2234000" />
+      <workItem from="1678522193329" duration="353000" />
+      <workItem from="1678522555911" duration="10725000" />
+      <workItem from="1678811459103" duration="131000" />
+      <workItem from="1678811600377" duration="292000" />
+      <workItem from="1678811907107" duration="7946000" />
+      <workItem from="1678976636746" duration="1509000" />
+      <workItem from="1678981659322" duration="8811000" />
+      <workItem from="1679123476239" duration="5899000" />
+      <workItem from="1679133134687" duration="4072000" />
+      <workItem from="1679413412035" duration="6579000" />
+      <workItem from="1679421454920" duration="2268000" />
+      <workItem from="1679423761441" duration="6011000" />
+      <workItem from="1679429887628" duration="840000" />
+      <workItem from="1679505694456" duration="2427000" />
+      <workItem from="1679508166694" duration="4472000" />
+      <workItem from="1679587264221" duration="9926000" />
+      <workItem from="1679597376262" duration="706000" />
+      <workItem from="1679598151916" duration="512000" />
+      <workItem from="1679674246304" duration="1018000" />
+      <workItem from="1679728403140" duration="10769000" />
+      <workItem from="1680017607533" duration="12318000" />
+      <workItem from="1680030675861" duration="1894000" />
+      <workItem from="1680193174434" duration="17652000" />
+      <workItem from="1680803479096" duration="4085000" />
+      <workItem from="1680905917768" duration="1254000" />
+      <workItem from="1681227843552" duration="356000" />
+      <workItem from="1681228223185" duration="274000" />
+      <workItem from="1681228576729" duration="10430000" />
+      <workItem from="1681401812882" duration="9351000" />
+      <workItem from="1681541689190" duration="9803000" />
+      <workItem from="1681832501721" duration="11541000" />
+      <workItem from="1682004814370" duration="1739000" />
+      <workItem from="1682006606544" duration="1474000" />
+      <workItem from="1682008105639" duration="155000" />
+      <workItem from="1682008268844" duration="51000" />
+      <workItem from="1682008326780" duration="72000" />
+      <workItem from="1682008410408" duration="315000" />
+      <workItem from="1682009466687" duration="2582000" />
+      <workItem from="1682012085297" duration="6612000" />
+      <workItem from="1682147274757" duration="10100000" />
+      <workItem from="1682437836561" duration="7475000" />
+      <workItem from="1682612179507" duration="9496000" />
+      <workItem from="1682751965926" duration="12345000" />
+      <workItem from="1683042090151" duration="11746000" />
+    </task>
+    <task id="LOCAL-00001" summary="first changes">
+      <created>1678813468071</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678813468071</updated>
+    </task>
+    <task id="LOCAL-00002" summary="origin vite.conf">
+      <created>1678977101290</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678977101290</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Html lesson base tags">
+      <created>1679421924511</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679421924511</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Html lesson base tags">
+      <created>1679426393639</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679426393639</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="first changes" />
+    <MESSAGE value="origin vite.conf" />
+    <MESSAGE value="Html lesson base tags" />
+    <option name="LAST_COMMIT_MESSAGE" value="Html lesson base tags" />
+  </component>
+</project>
