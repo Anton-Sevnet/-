@@ -5,6 +5,8 @@ import {delay} from './src/utils/timeUtils.js';
 import TaskVO from "./src/mvc/model/vo/TaskVO.js";
 import TasksController from "./src/mvc/controller/tasksController.js";
 import TasksModel from "./src/mvc/model/TaskModel.js";
+import "toastify-js/src/toastify.css";
+import Toastify from 'toastify-js';
 
 const KEY_LOCAL_TASKS = 'tasks';
 
@@ -32,6 +34,12 @@ function renderTask(taskVO) {
 	return domTaskClone;
 }
 
+const showToast = (text) => Toastify({
+	text: text,
+	duration: 2000,
+	close: true,
+	background: "linear-gradient(to right, #00b09b, #96c93d)",
+}).showToast();
 
 async function main() {
 	tasksModel.addUpdateCallBack((tasks) => {
@@ -39,7 +47,11 @@ async function main() {
 		domTaskColumn.innerHTML = '';
 		tasks.forEach((taskVO) => renderTask(taskVO));
 	});
-	tasksController.retrieveTasks();
+	tasksController.retrieveTasks()
+		.then(() => {
+		})
+		.catch((e) => {
+		});
 
 
 	const taskOperations = {
@@ -52,26 +64,20 @@ async function main() {
 					console.log('> Create task -> On Confirm');
 					tasksController
 						.createTask(taskTitle, taskDate, taskTags)
-						.then((e) => {
-							console.log('> Create task -> On Confirm: Success', e);
-
+						.then((taskVO) => {
+							console.log('> Create task -> On Confirm: Success', taskVO);
+							showToast(`You task saved: ${taskVO.title}`);
 						})
 						.catch((error) => {
 							console.log('> Create task -> On Confirm: Error', error);
+							console.alert(`Error on server: ${error.toString()}`);
 
-						})
-
-					const taskId = `task_${Date.now()}`;
-					const taskVO = new TaskVO(taskId, taskTitle, taskDate, taskTags);
-
-					renderTask(taskVO);
-					tasks.push(taskVO);
-
-					saveTask();
+						});
 				}
 			);
 		},
-		[DOM.Template.Task.BTN_DELETE]: (taskVO, domTask) => {
+		[DOM.Template.Task.BTN_DELETE]: (taskId) => {
+			const taskVO = tasksModel.getTaskById(taskId);
 			renderTaskPopup(
 				taskVO,
 				'Confirm delete task?',
@@ -82,10 +88,9 @@ async function main() {
 						taskDate,
 						taskTag,
 					});
-					const indexOfTask = tasks.indexOf(taskVO);
-					tasks.splice(indexOfTask, 1);
-					domTaskColumn.removeChild(domTask);
-					saveTask();
+					tasksController.deleteTask(taskId).then(() => {
+						showToast(`You task deleted: ${taskVO.title} ${taskVO.id}`);
+					});
 				}
 			);
 		},
@@ -131,26 +136,16 @@ async function main() {
 			taskId = domTask.dataset.id;
 		} while (!taskId);
 
-		const taskVO = tasks.find((task) => task.id === taskId);
-		console.log('> taskVO:', taskVO);
 
 		const taskOperation = taskOperations[taskBtn];
 		if (taskOperation) {
-			taskOperation(taskVO, domTask);
+			taskOperation(taskId, domTask);
 		}
 	};
 
 	getDOM(DOM.Button.CREATE_TASK).onclick = () => {
 		console.log('> domPopupCreateTask.classList');
-		renderTaskPopup(
-			null,
-			'Create task',
-			'Create',
-			(taskTitle, taskDate, taskTags) => {
-				console.log('> Create task -> On Confirm');
-				tasksController.createTask(taskTitle, taskDate, taskTags);
-			}
-		);
+		taskOperations[DOM.Button.CREATE_TASK]();
 	};
 
 

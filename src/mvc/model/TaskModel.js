@@ -24,6 +24,23 @@ class TasksModel {
 		this.#updateCallBack.push(updateCallback);
 	}
 
+	getTaskById(id) {
+		const taskId = parseInt(id);
+		const taskVO = this.#tasks.find((task) => task.id === taskId);
+		console.log('> TasksModel > taskVO:', id, taskVO);
+		return taskVO;
+	}
+
+	deleteTaskById(id) {
+		// console.log('> TasksModel > deleteTaskById:', taskId);
+		const taskId = parseInt(id);
+		const index = this.#tasks.findIndex((taskVO) => taskVO.id === taskId);
+		console.log('> TasksModel > deleteTaskById: index =', index);
+		this.#tasks.splice(index, 1);
+		this.#update();
+		// this.tasks = this.#tasks.filter((taskVO) => taskVO.id !== taskId);
+	}
+
 	addTask(taskVO) {
 		console.log('> TasksModel -> addTask:', taskVO);
 		this.#tasks.push(taskVO);
